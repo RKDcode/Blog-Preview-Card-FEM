@@ -1,0 +1,114 @@
+:root{
+    --yellow: #f4d04e;
+    --gray950: #111111;
+    --gray500: #6b6b6b;
+    --white: #ffffff;
+    --spacing-200: 1.5rem;
+    --spacing-150: 0.75rem;
+    --spacing-50: 0.25rem;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: var(--yellow);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container:hover, .container:focus {
+    box-shadow: 16px 16px 0px 0px #000;     
+}
+
+.blog-link:focus, .blog-link:hover {
+    color: var(--yellow);
+}
+
+.container {
+    position: relative;
+    border-radius: 1.25em;
+    padding: var(--spacing-200);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    max-width: 336px;
+    gap: var(--spacing-200);
+    box-shadow: 8px 8px 0px 0px #000;
+}
+.container a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.main-img{
+    border-radius: 0.625em;
+}
+
+span{
+    background-color: var(--yellow);
+    width: fit-content;
+    border-radius: 0.25em;
+    padding: var(--spacing-50) var(--spacing-150);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-150);
+}
+.instructor-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-150);
+}
+
+.img-avatar {
+    width: 2rem;
+}
+
+.text-preset-1 {
+    color: var(--gray950);
+    font-family: Figtree;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 36px */
+}
+
+.text-preset-2 {
+    color: var(--gray500);
+    font-family: Figtree;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+
+.text-preset-3 {
+    color: var(--gray950);
+    font-family: Figtree;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+}
+
+.text-preset-3-bold {
+    color: var(--gray950);
+    font-family: Figtree;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 21px */
+}
